@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="zh-CN" data-palette="mono" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f5f2">
+  <meta name="description" content="Kukie 的个人小站。一些工具，一些折腾，还有慢慢成形的想法。">
+  <title>Kukie · 想到什么，就做点什么</title>
+  <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
+  <link rel="preload" href="./assets/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <div class="ambient" aria-hidden="true"><span></span><span></span></div>
+  <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-up-right" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-spark" viewBox="0 0 24 24"><path d="m12 3 2.6 6.4L21 12l-6.4 2.6L12 21l-2.6-6.4L3 12l6.4-2.6ZM20 2v4m-2-2h4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20 13.2A8.3 8.3 0 0 1 10.8 4 8.4 8.4 0 1 0 20 13.2Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+    <symbol id="icon-pause" viewBox="0 0 24 24"><path d="M8 5v14m8-14v14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-github" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.3-4.3-2-6-2m12 5v-3.9c0-1 .1-1.7-.5-2.3 3.1-.3 6.4-1.5 6.4-6.8a5.3 5.3 0 0 0-1.4-3.7 5 5 0 0 0-.1-3.7s-1.2-.4-3.8 1.4a13 13 0 0 0-6.8 0C6.2 1.2 5 1.6 5 1.6a5 5 0 0 0-.1 3.7A5.3 5.3 0 0 0 3.5 9c0 5.3 3.3 6.5 6.4 6.8-.6.6-.6 1.4-.5 2.3V22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-book" viewBox="0 0 24 24"><path d="M12 5v15M3 4c4-1 6-.5 9 1 3-1.5 5-2 9-1v15c-4-1-6-.5-9 1-3-1.5-5-2-9-1Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="icon-yingyu" viewBox="0 0 32 32">
+      <rect x="7" y="5" width="20" height="22" rx="6" fill="currentColor" opacity=".25" transform="rotate(10 17 16)"/>
+      <rect x="4" y="7" width="20" height="21" rx="6" fill="currentColor"/>
+      <path class="icon-cutout" d="m8 22 5-6 4 4 3-3" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle class="icon-cutout-fill" cx="17" cy="12" r="2" fill="#fff"/>
+    </symbol>
+    <symbol id="icon-chaguan" viewBox="0 0 32 32">
+      <path d="M11.9 24A9.6 9.6 0 1 0 8 19.9L6 26Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-tunnel" viewBox="0 0 48 48">
+      <path d="M12 31V20a12 12 0 0 1 24 0v11M18 31V20a6 6 0 0 1 12 0v11M10 37h28M24 28v9" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-subtrack" viewBox="0 0 32 32"><rect x="6" y="7" width="20" height="20" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M6 13h20M11 4v6m10-6v6m-9 11 3 3 5-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-framecraft" viewBox="0 0 32 32"><rect x="5" y="5" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M5 12h20M17 17l11 4-5 2-2 5Z" fill="var(--surface-solid, #fff)" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="9" cy="8.5" r="1" fill="currentColor"/></symbol>
+    <symbol id="icon-qiyun" viewBox="0 0 32 32"><rect x="5" y="5" width="22" height="9" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/><rect x="5" y="18" width="22" height="9" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M19 9.5h3m-3 13h3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="10" cy="9.5" r="1" fill="currentColor"/><circle cx="10" cy="22.5" r="1" fill="currentColor"/></symbol>
+  </svg>
+
+  <div class="page-viewport">
+  <div class="page-shell">
+    <header class="site-header glass reveal" data-reveal="left">
+      <a id="header-brand" class="brand" href="#top" aria-label="Kukie 首页" title="点一下，重新拼字">
+        <img src="./assets/mark.svg" width="35" height="35" alt="">
+        <span class="brand-wordmark" aria-hidden="true"><span class="brand-letter">k</span><span class="brand-letter">u</span><span class="brand-letter">k</span><span class="brand-letter" data-letter="i">i</span><span class="brand-letter">e</span><span class="brand-letter brand-dot">.</span></span>
+      </a>
+      <nav aria-label="主导航"><a href="#projects">做过的东西</a><a href="#notes">折腾记录</a><a href="#about">关于这里</a></nav>
+      <div class="header-actions">
+        <div class="palette-switch" role="group" aria-label="选择配色">
+          <button class="palette-button selected" type="button" data-palette-choice="mono" aria-label="黑白配色" aria-pressed="true"><span class="swatch swatch-mono"></span></button>
+          <button class="palette-button" type="button" data-palette-choice="green" aria-label="森林绿配色" aria-pressed="false"><span class="swatch swatch-green"></span></button>
+        </div>
+        <button id="theme-toggle" class="icon-button" type="button" aria-label="切换深色外观"><svg class="icon"><use href="#icon-moon"/></svg></button>
+        <a class="header-github" href="https://github.com/qiuyuxc" target="_blank" rel="noopener noreferrer" aria-label="Kukie 的 GitHub（新窗口）"><svg class="icon"><use href="#icon-github"/></svg><span>GitHub</span><svg class="icon small"><use href="#icon-up-right"/></svg></a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy reveal" data-reveal="left" data-reveal-delay="80">
+          <span class="eyebrow"><span class="small-spark" aria-hidden="true">✳</span> 一个自由生长的小站</span>
+          <h1 id="hero-title">想到什么，<br><span>就做点什么。</span></h1>
+          <p class="hero-description">一些工具，一些折腾，<br>还有慢慢成形的想法。<br><span>你好，我是 Kukie。欢迎来我的小角落逛逛。</span></p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">看看做过的东西<svg class="icon"><use href="#icon-arrow"/></svg></a>
+            <button id="wander" class="text-button" type="button">随便逛逛<svg class="icon small"><use href="#icon-spark"/></svg></button>
+          </div>
+          <div class="hero-footnote"><span class="tiny-dot" aria-hidden="true"></span>没有固定方向，只有一点好奇心。</div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="orbit orbit-outer" aria-hidden="true"></div>
+          <div class="orbit orbit-inner" aria-hidden="true"></div>
+          <span class="loose-spark spark-top" aria-hidden="true"><svg class="icon"><use href="#icon-spark"/></svg></span>
+          <span class="loose-spark spark-bottom" aria-hidden="true">＋</span>
+          <div class="scene-parallax reveal" data-reveal="right" data-reveal-delay="160">
+            <div class="scene-window glass" id="project-display" role="tabpanel" aria-labelledby="project-tab-0" tabindex="0">
+              <div class="window-bar">
+                <div class="window-tools"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><button id="motion-toggle" class="icon-button" type="button" aria-label="暂停动效" aria-pressed="false" title="暂停或播放动效"><svg class="icon small"><use href="#icon-pause"/></svg></button></div>
+                <span>从想法，到作品</span>
+                <span class="window-tools-spacer" aria-hidden="true"></span>
+              </div>
+              <div class="particle-stage">
+                <div class="stage-guide" aria-hidden="true"></div>
+                <svg class="particle-fallback" viewBox="0 0 32 32" aria-hidden="true"><use href="#icon-yingyu"/></svg>
+                <canvas id="particle-canvas" width="840" height="540" aria-hidden="true"></canvas>
+              </div>
+              <div class="window-caption"><span><span id="scene-number">01</span><span class="caption-line"></span><span id="scene-label">YINGYU</span></span><span>每个想法，都有自己的形状。</span></div>
+            </div>
+          </div>
+          <div class="floating-badge glass reveal" data-reveal="right" data-reveal-delay="280" aria-hidden="true"><span class="badge-icon"><svg class="icon"><use id="badge-symbol" href="#icon-yingyu"/></svg></span><span id="badge-copy">轻盈存放<br><strong>自在分享</strong></span></div>
+          <div class="project-peek glass reveal" data-reveal="left" data-reveal-delay="380">
+            <div class="peek-heading"><span id="peek-category" class="mini-label">图片与日常</span><span class="peek-number" aria-hidden="true">↗</span></div>
+            <div class="peek-content"><div><h2 id="peek-title">映屿</h2><p id="peek-description">给每一张图片，一个轻盈的住处。</p></div><a id="project-visit" class="round-link" href="https://img.kukie.cn" target="_blank" rel="noopener noreferrer" aria-label="打开映屿（新窗口）"><svg class="icon"><use href="#icon-arrow"/></svg></a></div>
+          </div>
+          <div class="project-tabs reveal" data-reveal="right" data-reveal-delay="480" role="tablist" aria-label="首屏展示的项目">
+            <span class="tab-indicator" aria-hidden="true"></span>
+            <button id="project-tab-0" type="button" role="tab" aria-selected="true" aria-controls="project-display" tabindex="0" data-project-index="0"><svg class="icon"><use href="#icon-yingyu"/></svg><span>映屿</span></button>
+            <button id="project-tab-1" type="button" role="tab" aria-selected="false" aria-controls="project-display" tabindex="-1" data-project-index="1"><svg class="icon"><use href="#icon-chaguan"/></svg><span>茶馆</span></button>
+            <button id="project-tab-2" type="button" role="tab" aria-selected="false" aria-controls="project-display" tabindex="-1" data-project-index="2"><svg class="icon"><use href="#icon-tunnel"/></svg><span>Tunnel</span></button>
+          </div>
+          <span id="project-status" class="sr-only" aria-live="polite"></span>
+        </div>
+      </section>
+
+      <div class="page-divider"><span>不设方向，慢慢生长。</span><span class="divider-index" aria-hidden="true">SCROLL TO EXPLORE <span>↓</span></span></div>
+
+      <section id="projects" class="projects-section" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div class="reveal" data-reveal="left"><span class="section-kicker">01 / 做过的东西</span><h2 id="projects-title">把好奇心，<span>做成看得见的东西。</span></h2></div>
+          <div class="filter-group reveal" data-reveal="right" data-reveal-delay="80" role="group" aria-label="筛选项目">
+            <button type="button" data-filter="all" aria-pressed="true" class="selected">全部</button>
+            <button type="button" data-filter="web" aria-pressed="false">Web</button>
+            <button type="button" data-filter="android" aria-pressed="false">Android</button>
+          </div>
+        </div>
+        <p id="filter-status" class="sr-only" aria-live="polite"></p>
+        <div class="project-layout" data-filter="all">
+          <a class="featured-project glass reveal" data-reveal="left" href="https://img.kukie.cn" target="_blank" rel="noopener noreferrer" data-category="web" data-preview-project="0">
+            <div class="featured-top"><span class="project-icon"><svg><use href="#icon-yingyu"/></svg></span><span class="featured-label">一处图片的住处</span><svg class="icon"><use href="#icon-up-right"/></svg></div>
+            <h3>映屿<span>YINGYU</span></h3>
+            <p>留住日常一瞬，<br>也收好那些舍不得丢的灵感。</p>
+            <div class="album-preview" aria-hidden="true">
+              <div class="album-sheet sheet-back"></div>
+              <div class="album-sheet sheet-front"><div class="album-bar"><span class="window-dots"><i></i><i></i><i></i></span><span>生活的切片</span><span>↗</span></div><div class="album-photos"><img src="./assets/lake.jpg" alt="" loading="lazy" width="300" height="400"><div><img src="./assets/forest.jpg" alt="" loading="lazy" width="200" height="150"><img src="./assets/mountain.jpg" alt="" loading="lazy" width="200" height="150"></div></div></div>
+              <span class="album-sticker glass"><svg class="icon small"><use href="#icon-spark"/></svg>收藏一点日常</span>
+            </div>
+            <div class="featured-footer"><span>WEB <i>·</i> 图床 / 相册</span><span>去映屿看看<svg class="icon small"><use href="#icon-arrow"/></svg></span></div>
+          </a>
+          <div class="project-list">
+            <a class="project-row reveal" data-reveal="right" data-reveal-delay="40" href="https://github.com/qiuyuxc/chaguan" target="_blank" rel="noopener noreferrer" data-category="web" data-preview-project="1"><span class="project-icon"><svg><use href="#icon-chaguan"/></svg></span><span class="project-row-copy"><strong>茶馆<span class="project-tag">社区</span></strong><span>找个地方坐坐，把话慢慢聊开。</span></span><svg class="icon row-arrow"><use href="#icon-up-right"/></svg></a>
+            <a class="project-row reveal" data-reveal="right" data-reveal-delay="110" href="https://docs.kukie.cn" target="_blank" rel="noopener noreferrer" data-category="web" data-preview-project="2"><span class="project-icon"><svg><use href="#icon-tunnel"/></svg></span><span class="project-row-copy"><strong>Tunnel Manager<span class="project-tag">网络</span></strong><span>给隧道、域名和服务，一个顺手的面板。</span></span><svg class="icon row-arrow"><use href="#icon-up-right"/></svg></a>
+            <a class="project-row reveal" data-reveal="right" data-reveal-delay="180" href="https://github.com/qiuyuxc/SubTrack" target="_blank" rel="noopener noreferrer" data-category="web"><span class="project-icon"><svg><use href="#icon-subtrack"/></svg></span><span class="project-row-copy"><strong>SubTrack<span class="project-tag">工具</span></strong><span>记住订阅，也记住钱都花去了哪里。</span></span><svg class="icon row-arrow"><use href="#icon-up-right"/></svg></a>
+            <button class="project-row reveal" data-reveal="right" data-reveal-delay="250" type="button" data-category="web" data-project-detail="framecraft"><span class="project-icon"><svg><use href="#icon-framecraft"/></svg></span><span class="project-row-copy"><strong>Framecraft<span class="project-tag">创作</span></strong><span>把网页摊在画布上，拖一拖，改一改。</span></span><svg class="icon row-arrow"><use href="#icon-arrow"/></svg></button>
+            <button class="project-row reveal" data-reveal="right" data-reveal-delay="320" type="button" data-category="android" data-project-detail="qiyun"><span class="project-icon"><svg><use href="#icon-qiyun"/></svg></span><span class="project-row-copy"><strong>栖云<span class="project-tag">Android</span></strong><span>在手机上，照看自己的服务器。</span></span><svg class="icon row-arrow"><use href="#icon-arrow"/></svg></button>
+          </div>
+        </div>
+      </section>
+
+      <section id="notes" class="notes-section glass" aria-labelledby="notes-title">
+        <div class="notes-copy reveal" data-reveal="left"><span class="section-kicker">02 / 折腾记录</span><h2 id="notes-title">做过，<br>也记下来。</h2><p>有顺手的办法，也有绕过的弯路。<br>都放进笔记里，留给下次的自己。</p><a class="text-link" href="https://www.kukie.cn" target="_blank" rel="noopener noreferrer">去我的笔记逛逛<svg class="icon small"><use href="#icon-arrow"/></svg></a></div>
+        <div class="note-list">
+          <a class="reveal" data-reveal="right" data-reveal-delay="60" href="https://www.kukie.cn/posts/yingyu-image-host/" target="_blank" rel="noopener noreferrer"><time datetime="2026-11-05"><span>11.05</span>2026</time><div><span class="note-category">从想法到上线</span><h3>映屿：一个图片住处的实现记录</h3></div><svg class="icon"><use href="#icon-up-right"/></svg></a>
+          <a class="reveal" data-reveal="right" data-reveal-delay="130" href="https://www.kukie.cn/posts/openlist-nat/" target="_blank" rel="noopener noreferrer"><time datetime="2026-10-17"><span>10.17</span>2026</time><div><span class="note-category">手机也能折腾</span><h3>把 OpenList 和 NAT 打洞塞进手机</h3></div><svg class="icon"><use href="#icon-up-right"/></svg></a>
+          <a class="reveal" data-reveal="right" data-reveal-delay="200" href="https://www.kukie.cn/posts/tunnel-manager/" target="_blank" rel="noopener noreferrer"><time datetime="2026-07-11"><span>07.11</span>2026</time><div><span class="note-category">让工具顺手一点</span><h3>给 Cloudflare Tunnel 做一个管理面板</h3></div><svg class="icon"><use href="#icon-up-right"/></svg></a>
+        </div>
+      </section>
+
+      <section id="about" class="about-section" aria-labelledby="about-title">
+        <span class="about-spark reveal" data-reveal="left" aria-hidden="true"><svg class="icon"><use href="#icon-spark"/></svg></span>
+        <span class="section-kicker reveal" data-reveal="right" data-reveal-delay="50">03 / 关于这里</span>
+        <h2 id="about-title" class="reveal" data-reveal="left" data-reveal-delay="120">没有什么宏大的计划。<br><span>只是想到了，就试着做做。</span></h2>
+        <p class="reveal" data-reveal="right" data-reveal-delay="200">这里是 Kukie 的个人小站。兴趣走到哪里，项目就长到哪里。<br>如果其中某个小东西，刚好也能帮到你，那就再好不过了。</p>
+        <a class="button secondary reveal" data-reveal="left" data-reveal-delay="280" href="https://github.com/qiuyuxc" target="_blank" rel="noopener noreferrer"><svg class="icon small"><use href="#icon-github"/></svg>来看看我最近在做什么<svg class="icon small"><use href="#icon-up-right"/></svg></a>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="brand" href="#top"><img src="./assets/mark.svg" width="28" height="28" alt=""><span>kukie<span class="brand-dot">.</span></span></a><span>© <span id="year">2026</span> Kukie · 给每一份好奇心留一点位置。</span><a href="#top">回到顶部<svg class="icon small"><use href="#icon-arrow"/></svg></a></footer>
+  </div>
+  </div>
+
+  <dialog id="project-dialog" class="project-dialog glass" aria-labelledby="dialog-title">
+    <div class="dialog-heading"><span id="dialog-category" class="section-kicker"></span><button id="dialog-close" class="icon-button" type="button" aria-label="关闭项目介绍"><svg class="icon"><use href="#icon-close"/></svg></button></div>
+    <span class="project-icon dialog-icon"><svg><use id="dialog-symbol" href="#icon-framecraft"/></svg></span>
+    <h2 id="dialog-title"></h2><p id="dialog-description"></p>
+    <ul id="dialog-features"></ul><span class="dialog-note">这个作品还在自己的工作台上慢慢打磨。</span>
+  </dialog>
+</body>
+</html>
